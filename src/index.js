@@ -24,11 +24,13 @@ import "./scss/volt.scss";
 import "react-datetime/css/react-datetime.css";
 
 import HomePage from "./pages/HomePage";
+import Employeelist from "./components/employe_table"
 import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <HashRouter>
     <ScrollToTop />
+    {/* <Employeelist /> */}
     <HomePage />
   </HashRouter>,
   document.getElementById("root")

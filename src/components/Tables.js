@@ -24,6 +24,8 @@ const ValueChange = ({ value, suffix }) => {
   );
 };
 
+
+
 export const PageVisitsTable = () => {
   const TableRow = (props) => {
     const { pageName, views, returnValue, bounceRate } = props;
@@ -74,32 +76,31 @@ export const PageVisitsTable = () => {
 
 export const PageTrafficTable = () => {
   const TableRow = (props) => {
-    const { id, source, sourceIcon, sourceIconColor, sourceType, category, rank, trafficShare, change } = props;
 
     return (
       <tr>
         <td>
-          <Card.Link href="#" className="text-primary fw-bold">{id}</Card.Link>
+          <Card.Link href="#" className="text-primary fw-bold"></Card.Link>
         </td>
         <td className="fw-bold">
-          <FontAwesomeIcon icon={sourceIcon} className={`icon icon-xs text-${sourceIconColor} w-30`} />
-          {source}
+          <FontAwesomeIcon  className={`icon icon-xs text w-30`} />
+          
         </td>
-        <td>{sourceType}</td>
-        <td>{category ? category : "--"}</td>
-        <td>{rank ? rank : "--"}</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>
           <Row className="d-flex align-items-center">
             <Col xs={12} xl={2} className="px-0">
-              <small className="fw-bold">{trafficShare}%</small>
+              <small className="fw-bold"></small>
             </Col>
             <Col xs={12} xl={10} className="px-0 px-xl-1">
-              <ProgressBar variant="primary" className="progress-lg mb-0" now={trafficShare} min={0} max={100} />
+              <ProgressBar variant="primary" className="progress-lg mb-0"  min={0} max={100} />
             </Col>
           </Row>
         </td>
         <td>
-          <ValueChange value={change} suffix="%" />
+          <ValueChange  suffix="%" />
         </td>
       </tr>
     );
@@ -112,12 +113,12 @@ export const PageTrafficTable = () => {
           <thead className="thead-light">
             <tr>
               <th className="border-0">#</th>
-              <th className="border-0">Traffic Source</th>
-              <th className="border-0">Source Type</th>
-              <th className="border-0">Category</th>
-              <th className="border-0">Global Rank</th>
-              <th className="border-0">Traffic Share</th>
-              <th className="border-0">Change</th>
+              <th className="border-0">first name</th>
+              <th className="border-0">last name</th>
+              <th className="border-0">phone number</th>
+              <th className="border-0">mat_id</th>
+              <th className="border-0">**</th>
+              <th className="border-0">training</th>
             </tr>
           </thead>
           <tbody>
